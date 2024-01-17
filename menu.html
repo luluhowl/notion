@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: "Salsa", cursiva; peso de fuente: 400;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #d1aaF9;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #Be7eff;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="Planner-mensual" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar"></i> Planner-mensual</a>
+		<a id="Planner-semanal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner-semanal</a>
+		<a id="Tareas" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-square-check"></i> Tareas</a>
+		<a id="Materias" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open"></i> Materias</a>
+		<a id="Resúmenes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-align-justify"></i> Resúmenes</a>
+		<a id="Libros" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Libros</a>
+		<a id="Notas" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-bookmark"></i> Notas</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'Planner-mensual')
+				window.open("https://www.notion.so/152a2862e91e4945b4015ded5ed5fdf9?v=f16d61fd9072411b890e377bd7d0d068&pvs=4", '_parent').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>

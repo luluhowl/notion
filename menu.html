@@ -58,8 +58,7 @@
 <body>
 
 	<nav class="navMenu  border background">
-		<a id="Planner-mensual" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar"></i> Planner-mensual</a>
-		<a id="Planner-semanal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner-semanal</a>
+		<a id="Planner" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar"></i> Planner</a>
 		<a id="Tareas" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-square-check"></i> Tareas</a>
 		<a id="Cursos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open"></i> Cursos</a>
 		<a id="Resúmenes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-align-justify"></i> Resúmenes</a>
@@ -83,10 +82,8 @@
 
 		function navigate(id) {
 
-			if (id == 'Planner-mensual')
-				window.open("https://www.notion.so/Planner-mensual-ac56971454174e51ae31811bdb7340dc?pvs=4", '_parent').focus();
-			else if (id == 'Planner-semanal')
-				window.open("https://www.notion.so/Planner-semanal-297e35a954264347b9ab338d49465359?pvs=4", '_parent').focus();
+			if (id == 'Planner')
+				window.open("https://www.notion.so/Planner-ac56971454174e51ae31811bdb7340dc?pvs=4", '_parent').focus();
 			else if (id == 'Tareas')
 				window.open("https://www.notion.so/Tareas-7bddbbba224b414b99adff29d44c6993?pvs=4", '_parent').focus();
 			else if (id == 'Cursos')
